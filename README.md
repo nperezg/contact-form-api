@@ -10,6 +10,14 @@ Run:
 
     composer install
     
+Database configuration in file .env. Then run:
+    
+    php bin/console doctrine:database:create
+    
+Migrate Database:
+
+     php bin/console doctrine:migrations:migrate
+    
 **If you want to use the Symfony server:**    
 
 Run server:
