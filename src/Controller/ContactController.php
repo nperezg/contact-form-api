@@ -37,10 +37,11 @@ class ContactController extends AbstractController
     }
 
     /**
+     * @Route("/api/contacts/", methods={"POST"}, name="api_contact_create")
      * @param Request $request
      * @return JsonResponse
-     * @throws \Doctrine\ORM\ORMException
-     * @Route("/api/contacts/", methods={"POST"}, name="api_contact_create")
+     * @throws ORMException
+     * @throws ValidationException
      */
     public function create(Request $request)
     {

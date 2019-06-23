@@ -20,6 +20,7 @@ class ContactRepository extends ServiceEntityRepository
     /**
      * @param Contact $contact
      * @throws \Doctrine\ORM\ORMException
+     * @throws \Doctrine\ORM\OptimisticLockException
      */
     public function save(Contact $contact)
     {
